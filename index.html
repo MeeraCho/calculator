@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="mortgate-calculator.js" type="module"></script>
+</head>
+<body>
+    <body>
+        <header>
+            <h1>Calculator</h1>
+        </header>
+        <div class="container">
+            <main>
+                <section>
+                    <div class="inner-container calculator">
+                        <form id="input-form" action="#" method="post" name="Project Form">
+                            <h2>Morgate Calculator</h2>
+                            <p>
+                                <label for="loanAmount">Loan Amount:</label>
+                                <input type="number" id="loanAmount" placeholder="300,000" required>
+                            </p>
+                            <p>
+                                <label for="interestRate">annual interest rate: </label>
+                                <input id="interestRate" type="number" step="0.01" placeholder="5" required> %
+                            </p>
+                            <p>
+                                <label for="loanTerm">loanterm: </label>
+                                <input id="loanTerm" type="number" name="term" placeholder="25" required> years
+                            </p>
+                            <button id="calculateBtn">get result</button>
+                        </form>
+                    </div>
+                </section>
+                
+                <div class="results">
+                    <h2>Results:</h2>
+                    <p>Monthly Payment: <span id="monthlyPayment">0.00</span></p>
+                    <p>Total Payment: <span id="totalPayment">0.00</span></p>
+                    <p>Total Interest: <span id="totalInterest">0.00</span></p>
+                </div>
+            </main>
+        </div>
+        <footer>
+
+        </footer>
+    </body>
+</body>
+</html>
+
